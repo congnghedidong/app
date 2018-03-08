@@ -16,13 +16,15 @@ import java.util.List;
  * Created by PC on 3/4/2018.
  */
 
-public class ThongTinAdapter extends ArrayAdapter {
+public class ThongTinAdapter extends BaseAdapter {
     private Context context;
     private int layout;
     private List<ThongTin> thongTins;
 
     public ThongTinAdapter(Context context, int layout, List<ThongTin> thongTins) {
-        super(context,layout,thongTins);
+        this.context = context;
+        this.layout = layout;
+        this.thongTins = thongTins;
     }
 
     @Override
@@ -59,6 +61,6 @@ public class ThongTinAdapter extends ArrayAdapter {
         imagePosition.setImageResource(thongTin.getImagePosition());
         rate.setText(thongTin.getRate()+"");
 
-        return null;
+        return view;
     }
 }
