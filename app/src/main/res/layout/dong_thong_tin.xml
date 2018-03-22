@@ -1,57 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="10dp"
-    android:background="@color/white">
-
+<android.support.v7.widget.CardView android:id="@+id/card_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tieu_de">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/image_user"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/logo2" />
-
-        <TextView
-            android:id="@+id/name_user"
-            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo2" />
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingLeft="10dp"
-            android:text="Admin"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/name_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Admin"
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/date_create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="21h30:31/12/1997"
+                android:textSize="12dp" />
+        </LinearLayout>
     </LinearLayout>
-    <TextView
-        android:id="@+id/name_position"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Núi thần tài"
-        android:textSize="30dp"/>
-    <ImageView
-        android:id="@+id/image_position"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/nui_than_tai"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="3">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    android:weightSum="10">
+                    <ImageView
+                        android:layout_weight="8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/position"
+                        android:layout_gravity="center_vertical"/>
+                    <TextView
+                        android:layout_weight="2"
+                        android:id="@+id/name_position"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Núi thần tài"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:weightSum="10">
+                    <ImageView
+                        android:layout_weight="8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/calender"
+                        android:layout_gravity="center_vertical"/>
+                    <TextView
+                        android:layout_weight="2"
+                        android:id="@+id/time_go"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7h00:31/12/2018"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="7">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    android:weightSum="10">
+                    <ImageView
+                        android:layout_weight="8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/people"
+                        android:layout_gravity="center_vertical"/>
+                    <TextView
+                        android:layout_weight="2"
+                        android:id="@+id/number_people"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="32"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:weightSum="10">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:src="@drawable/people_group1" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Tham gia"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:weightSum="10">
+            <ImageView
+                android:layout_weight="8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/description"/>
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Khu du lịch sinh thái gần gũi với thiên nhiên."/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/image_position"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rate: "
-            android:textSize="20dp"/>
-        <TextView
-            android:id="@+id/rate"
-            android:layout_width="wrap_content"
+            android:background="@drawable/nui_than_tai"
+            android:fitsSystemWindows="true"
+            android:scaleType="centerCrop" />
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="4,5*"
-            android:textSize="20dp"/>
+            android:weightSum="4"
+            android:layout_marginTop="7dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="69"
+                android:drawableLeft="@drawable/like2"
+                android:padding="5dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="69"
+                android:drawableLeft="@drawable/dislike"
+                android:background="@color/white"
+                android:padding="5dp"/>
+            <Button
+                android:id="@+id/btn_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="69"
+                android:drawableLeft="@drawable/comment1"
+                android:background="@color/white"
+                android:padding="5dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="69"
+                android:drawableLeft="@drawable/share1"
+                android:background="@color/white"
+                android:padding="5dp"/>
+        </LinearLayout>
     </LinearLayout>
-
-</LinearLayout>
+</android.support.v7.widget.CardView>

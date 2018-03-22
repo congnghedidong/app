@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_weight="8"
+            android:src="@drawable/logo2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/username_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Admin"
+                android:textColor="@color/blue"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/context_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Hay lắm"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/datetime_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 giờ trước"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

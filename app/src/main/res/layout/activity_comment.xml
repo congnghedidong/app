@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.nhc.cuongnguyen.trip.CommentActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bình Luận"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textSize="20dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/Gray"
+        android:weightSum="10">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:src="@drawable/nui_than_tai"/>
+        <EditText
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bình luận"/>
+        <Button
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Đăng"
+            android:textColor="@color/white"
+            android:background="@drawable/login_border"/>
+    </LinearLayout>
+</LinearLayout>

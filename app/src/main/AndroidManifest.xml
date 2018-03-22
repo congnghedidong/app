@@ -21,6 +21,9 @@
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme" />
         <activity android:name=".Main3Activity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".CommentActivity" />
+        <activity android:name=".MessengerActivity"></activity>
     </application>
 
 </manifest>

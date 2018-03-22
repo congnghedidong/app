@@ -5,25 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    app:layout_scrollFlags="scroll|enterAlways"
     tools:context="com.nhc.cuongnguyen.trip.NewFeedActivity">
     <LinearLayout
-        android:layout_margin="10dp"
+        app:layout_scrollFlags="scroll"
+        android:layout_margin="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white">
-        <ImageView
-            android:layout_width="70dp"
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/logo2"
+            android:scaleType="centerCrop"
             android:layout_gravity="center"/>
-        <EditText
+        <Button
+            android:id="@+id/dang_bai"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:hint="Đăng bài"
+            android:layout_height="wrap_content"
+            android:hint="Thêm địa điểm bạn muốn đi !"
             android:padding="10dp"/>
     </LinearLayout>
-    <ListView
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/List_newfeed"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

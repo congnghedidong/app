@@ -48,8 +48,6 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -85,13 +83,6 @@ public class Main2Activity extends AppCompatActivity {
 
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main2, menu);
-        return true;
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -133,6 +124,9 @@ public class Main2Activity extends AppCompatActivity {
                 case 3 :
                     ProfileActivity tab4 = new ProfileActivity();
                     return tab4;
+                case 4 :
+                    SearchActivity tab5 = new SearchActivity();
+                    return tab5;
                 default:
                     return null;
             }
@@ -141,7 +135,7 @@ public class Main2Activity extends AppCompatActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 4;
+            return 5;
         }
     }
 }
