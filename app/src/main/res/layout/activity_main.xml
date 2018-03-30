@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ghi nhớ tài khoản"
-                android:textColor="@color/black" />
+                android:textColor="@color/black2" />
         </LinearLayout>
 
         <Button
@@ -86,14 +86,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="16dp"
                 android:text="Tạo tài khoản?"
-                android:textColor="#000000" />
+                android:textColor="@color/black2" />
 
             <TextView
                 android:id="@+id/get_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
                 android:text="Quên mật khẩu?"
-                android:textColor="#000000" />
+                android:textColor="@color/black2" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
