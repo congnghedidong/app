@@ -50,47 +50,41 @@
 
         <Button
             android:id="@+id/btn_login"
-            android:layout_width="wrap_content"
+            android:layout_width="137dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/login_border"
+            android:layout_marginTop="10dp"
             android:text="Đăng nhập"
             android:textAllCaps="false"
             android:textColor="#ffffff" />
 
-        <Button
-            android:id="@+id/btn_login_fb"
-            android:layout_width="match_parent"
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/login_border"
-            android:text="Đăng nhập với Facebook"
-            android:textAllCaps="false"
-            android:textColor="#ffffff"
-            android:textSize="20sp" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="32dp" />
 
-        <Button
-            android:id="@+id/btn_login_gg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/login_gg_border"
-            android:text="Đăng nhập với Google"
-            android:textAllCaps="false"
-            android:textColor="@color/red"
-            android:textSize="20sp" />
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="187dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:gravity="center"
             android:weightSum="2">
 
             <TextView
                 android:id="@+id/txt_signup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_marginRight="16dp"
                 android:text="Tạo tài khoản?"
                 android:textColor="#000000" />
 
@@ -98,7 +92,6 @@
                 android:id="@+id/get_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="Quên mật khẩu?"
                 android:textColor="#000000" />
         </LinearLayout>

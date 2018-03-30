@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Trip.iml" filepath="$PROJECT_DIR$/Trip.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\dangb\Documents\GitHub\app\Trip.iml" filepath="C:\Users\dangb\Documents\GitHub\app\Trip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" />
+      <module fileurl="file://C:\Users\dangb\Documents\GitHub\app\app\app.iml" filepath="C:\Users\dangb\Documents\GitHub\app\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app-app.iml" filepath="$PROJECT_DIR$/app/app-app.iml" />
     </modules>
   </component>
 </project>
